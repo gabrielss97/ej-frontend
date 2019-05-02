@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import Main from './pages/main';
 
-function App() {
-  return (
-    <div className="App">
-    <h1>HELLO WORLD</h1>
-    </div>
-  );
+
+// import { Container } from './styles';
+
+class App extends Component {
+  render() {
+    return <Main />;
+  }
 }
+
 
 export default App;
