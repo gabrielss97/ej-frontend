@@ -69,3 +69,9 @@
   align-self: center;
   margin-top: 5%;
 }
+
+.response-message {
+  margin: 0;
+  color: red;
+  padding: 0;
+}
