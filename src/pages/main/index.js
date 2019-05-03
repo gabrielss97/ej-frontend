@@ -1,6 +1,8 @@
 import React, { Component } from "../../../node_modules/react";
 import api from "../../services/api";
 import "./styles.css";
+import { Link } from 'react-router-dom';
+
 
 export default class Main extends Component {
   state = {
@@ -15,6 +17,7 @@ export default class Main extends Component {
   };
 
   handleSubmit = async e => {
+
     e.preventDefault();
     const response = await api.post("users", {
       username: this.state.newUser.username,
@@ -28,7 +31,10 @@ export default class Main extends Component {
       this.setState({ responseMessage: response.data.message });
     } else {
       this.setState({ responseMessage: "" });
+      this.props.history.push("/home");
     }
+
+    
   };
 
   handleInputChange = e => {
@@ -80,7 +86,9 @@ export default class Main extends Component {
             <p className="response-message">{this.state.responseMessage}</p>
 
             <button type="submit">Cadastrar</button>
-            <p>Faça Login</p>
+            
+            <Link className="faca-login" to="/login">Faça Login</Link>
+
           </form>
         </div>
       </div>

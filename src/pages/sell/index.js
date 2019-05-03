@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "./styles.css";
 
-export default class Login extends Component {
+export default class Sell extends Component {
   render() {
     return (
       <div id="box">
@@ -10,11 +10,7 @@ export default class Login extends Component {
           <form>
             <i className="fas fa-pencil-ruler" />
             <h1>Troca Justa</h1>
-            <input placeholder="Usuário" type="text" />
-            <input placeholder="Senha" type="password" id="password" />
-            <button type="submit">Login</button>
-            <p>Cadastrar-se</p>
-            <p>Esqueci minha senha</p>
+            <h1>SELL</h1>
           </form>
         </div>
       </div>

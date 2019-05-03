@@ -1,0 +1,73 @@
+#box {
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to bottom,
+      #38ef7d,
+      #11998e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #38ef7d,
+      #11998e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #box-login {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  #box-login form i {
+    align-self: center;
+    font-size: 50px;
+  }
+  
+  #box-login form h1 {
+      align-self: center;
+      margin-top: 5%;
+  }
+  
+  #box-login form {
+    width: 300px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #box-login form input {
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: 3% 0;
+  }
+  
+  #box-login form button {
+    height: 46px;
+    color: white;
+    font-size: 25px;
+    background: #11998e;
+    border: none;
+    border-radius: 4px;
+    margin-top: 3%;
+  }
+  
+  #box-login form button:hover {
+    opacity: 0.8;
+  }
+  
+  .faca-login {
+    font-size: 18px;
+    align-self: center;
+    margin-top: 5%;
+    text-decoration: none;
+  }
+  
